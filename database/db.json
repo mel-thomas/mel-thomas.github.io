@@ -1,0 +1,95 @@
+{
+   "book": [
+    {
+        "title": "The Sleeping Solider",
+        "cover": "https://i.postimg.cc/B6b1N6Dw/sleeping-solider.jpg",
+        "series": "",
+        "author": "Aster Glenn Gray",
+        "genre": "adult, historical, romance",
+        "status": "🔥 Currently Reading"
+    },
+    {
+        "title": "The Internet Con",
+        "cover": "https://i.postimg.cc/fbSbdktT/internet-con.jpg",
+        "series": "",
+        "author": "Cory Doctorow",
+        "genre": "adult, nonfiction",
+        "status": "🔥 Currently Reading"
+    },
+    {
+        "title": "Orwell's Roses",
+        "cover": "https://i.postimg.cc/MKC3rdmq/orwells-roses.jpg",
+        "series": "",
+        "author": "Rebecca Solnit",
+        "genre": "adult, nonfiction",
+        "status": "🔥 Currently Reading"
+    },
+    {
+        "title": "The Grace of Kings",
+        "cover": "https://i.postimg.cc/prD3gZK9/grace-of-kings.jpg",
+        "series": "The Dandelion Dynasty #1",
+        "author": "Ken Liu",
+        "genre": "adult, fantasy",
+        "status": "🔥 Currently Reading"
+    },
+    {
+        "title": "The People in the Castle: Selected Strange Stories",
+        "cover": "https://i.postimg.cc/8zgxThjN/people.jpg",
+        "series": "",
+        "author": "Joan Aiken",
+        "genre": "adult, short stories, fantasy, sci-fi",
+        "status": "⭐⭐⭐⭐⭐ 10/26/23",
+        "date": ""
+    },
+    {
+        "title": "Gods of Jade and Shadow",
+        "cover": "https://i.postimg.cc/Jn4Fm69M/gods.jpg",
+        "series": "",
+        "author": "Silvia Moreno-Garcia",
+        "genre": "adult, historical, fantasy",
+        "status": "⭐⭐⭐ 10/22/23",
+        "date": ""
+    },
+    {
+        "title": "Squire",
+        "cover": "https://i.postimg.cc/qRhppRfp/squire.jpg",
+        "series": "",
+        "author": "Sara Alfageeh and Nadia Shammas",
+        "genre": "young adult, fantasty, graphic novel",
+        "status": "⭐⭐ 10/20/23"
+    }    
+   ],
+   "fanfic": [
+    {
+        "title": "Seven Years",
+        "fandom": "Red, White & Royal Blue",
+        "author": "LolaLand",
+        "ageRating": "Explicit",
+        "permalink": "https://archiveofourown.org/works/43709239/chapters/109909849",
+        "wordCount": "35,255",
+        "tropes": "multiple AUs, Soulmates Lite™️",
+        "status": "🔥 Currently Reading"
+    },
+    {
+        "title": "Once I get a taste",
+        "fandom": "Red, White & Royal Blue",
+        "author": "clottedcreamfudge",
+        "ageRating": "Explicit",
+        "permalink": "https://archiveofourown.org/works/51267646",
+        "wordCount": "16,466",
+        "tropes": "A/B/O 😈",
+        "status": "11/1/23"
+    },
+    {
+        "title": "Deep Blue",
+        "fandom": "Red, White & Royal Blue",
+        "author": "myheartalive",
+        "ageRating": "Explicit",
+        "permalink": "https://archiveofourown.org/works/43709239/chapters/109909849",
+        "wordCount": "76,030",
+        "tropes": "Beach AU",
+        "status": "10/15/23"
+    }
+   ]
+}
+

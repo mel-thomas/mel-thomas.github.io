@@ -1,0 +1,168 @@
+/* core */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+a {
+    color: #13c6bb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0ea59b;
+}
+
+.wrapper {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #fff;
+    height: 8vh;
+    text-align: center;
+}
+
+.tabset {
+    text-align: center;
+}
+
+.tabset > label {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+input:focus-visible + label {
+    outline: 2px solid #11d5c9;
+    border-radius: 3px;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+    border-bottom: 4px solid #11d5c9;
+    border-radius: 2px;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+    background: #11d5c9;
+}
+
+.tabset_content {
+    background-color: #f7f6f7;
+    min-height: 90vh;
+    padding: 20px 70px;
+}
+
+
+.tabset_panel {
+    padding: 30px 0;
+}
+
+/* tabs */
+
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+  }
+  
+.tabset .tabset_tab {
+    display: none;
+}
+
+.tabset > input:first-child:checked ~ .tabset_content > .tabset_tab:first-child,
+.tabset > input:nth-child(3):checked ~ .tabset_content > .tabset_tab:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tabset_content > .tabset_tab:nth-child(3) {
+    display: block;
+}
+
+/* card */
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card_data {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ece7ef;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.card_blur {
+    background-position: center;
+    background-size: cover;
+}
+
+.card_cover {
+    border-radius: 5px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card_bookMeta {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card_group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.card_title {
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.card_age {
+    color: #969696;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.card_fandom {
+    font-weight: bold;
+}
+
+.card_genre {
+    color: #969696;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.card_status {
+    color: #969696;
+    font-size: 14px;
+    text-align: right;
+    text-transform: uppercase;
+}

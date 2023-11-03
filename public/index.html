@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Log</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Mel's Reading Log 🪵</h1>
+        </header>
+        <div class="tabset">
+            <!-- tab 1 -->
+            <input type="radio" name="tabset" id="tab1" aria-controls="books" checked>
+            <label for="tab1">Books</label>
+            <!-- tab 2 -->
+            <input type="radio" name="tabset" id="tab2" aria-controls="fics">
+            <label for="tab2">Fanfic</label>
+            <!-- books -->
+            <div class="tabset_content">
+              <section id="books" class="tabset_tab">
+                <div class="card" id="mainbook">
+                </div>
+              </section>
+              <!-- fanfic -->
+              <section id="fics" class="tabset_tab">
+                <div class="card" id="mainfic">
+                </div>
+              </section>
+            </div>
+        </div>
+    <script>
+        let mainbook = document.getElementById("mainbook")
+
+        // fetch function
+        fetch("http://localhost:3000/book")
+            .then(res => res.json())
+            .then(json => {
+                json.map(data => {
+                    mainbook.append(bookfun(data))
+                })
+            })
+
+        let mainfic = document.getElementById("mainfic")
+
+        // fetch function
+        fetch("http://localhost:3000/fanfic")
+            .then(res => res.json())
+            .then(json => {
+                json.map(data => {
+                    mainfic.append(ficfun(data))
+                })
+            })
+
+        // create  book card
+        function bookfun({cover, title, series, author, genre, status}){
+            let bookcard= document.createElement('div');
+            bookcard.innerHTML = `
+            <div class="card_data">
+                <img class="card_cover" loading="lazy" src="${cover}">
+                <div class="card_text">
+                    <div class="card_bookMeta">
+                        <div class="card_title">${title}</div>
+                        <div class="card_series">${series}</div>
+                        <div>by ${author}</div>
+                        <div class="card_genre">${genre}</div>
+                    </div>
+                    <div class="card_status">${status}</div>
+                </div>
+            </div>
+            `;
+            return bookcard
+        }
+
+         // create  fic  card
+         function ficfun({title, permalink, fandom, author, ageRating, wordCount, tropes, status}){
+            let ficcard= document.createElement('div');
+            ficcard.innerHTML = `
+            <div class="card_data">
+                <div class="card_text">
+                    <div class="card_group">
+                        <div class="card_title"><a href="${permalink}">${title}</a> <span class="card_age">(${ageRating})</span></div>
+                        <div class="card_fandom">${fandom}</div>
+                        <div>by ${author}</div>
+                    </div>   
+                    <div class="card_group">
+                        <div>${tropes}</div>
+                        <div class="card_words">${wordCount} words</div>
+                    </div>
+                    <div class="card_status">${status}</div>
+                </div>
+            </div>
+            `;
+            return ficcard
+        }
+    </script>
+</body>
+</html>
