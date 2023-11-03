@@ -4,7 +4,7 @@
   },
   "name": "bookdatabase",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "public/index.html",
   "scripts": {
     "start": "json-server --watch ./database/db.json"
   },
