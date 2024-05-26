@@ -234,7 +234,7 @@ P {
     flex-direction: column;
     gap: 0;
     justify-content: flex-start;
-    padding: 1em 2em;
+    padding: 1em;
   }
 
   .contents_group {
@@ -257,6 +257,12 @@ P {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+@media screen and (max-width: 800px) { 
+  .nav { 
+    padding: 1em;
+  }
 }
 
 .nav_group {
@@ -300,6 +306,13 @@ P {
   position: relative;
   margin: 0 auto; 
   max-width: 1000px;
+}
+
+@media screen and (max-width: 800px) {
+  .main_content {
+    gap: 1em;
+    padding: 1em;
+  }
 }
 
 .main_backtotop {
