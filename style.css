@@ -125,7 +125,7 @@ P {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em;
+    padding: 2em 3em;
 }
 
 .frontPage_left {
@@ -148,6 +148,10 @@ P {
 @media screen and (max-width: 1000px) {
   .frontPage_buttonStack {
     width: 80%;
+  }
+
+  .frontPage_left {
+    padding: 2em;
   }
 }
 
